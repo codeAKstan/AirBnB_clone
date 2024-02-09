@@ -10,4 +10,43 @@
 In this project, we are building the airbnb console.
 This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
-![App Screenshot](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240209T142858Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a0080abb7e1bb5ae1f46bb5e79d3399a0a57e455f8b11bbb8a704a277b552f88)
+## Execution
+Your shell should work like this in interactive mode:
+
+```
+ $ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$ 
+```
+
+## for non-interactive mode
+
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
