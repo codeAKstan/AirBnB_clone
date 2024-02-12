@@ -4,10 +4,15 @@ and deserializes JSOn file to instances
 """
 import json
 from models.base_model import BaseModel
+from models.user import User
 
 
 class FileStorage:
     """ A class for serializing and deserializing instances """
+    CLASSES = {
+        'BaseModel': BaseModel,
+        'User': User
+        }
 
     __file_path = "file.json"
     __objects = {}
